@@ -8,17 +8,76 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>Create your burger</h1>
-    </header>
-    <main>
-        <input type="text" placeholder="Name your burger">
-        <div>
-            <h3>Ingredienti</h3>
-            
-        </div>
-    </main>
-
+    <div class="container">
+        <header>
+            <h1>Create your burger</h1>
+            <img class="resize-2" src="img/burger-top.png" alt="">
+        </header>
+        <main>
+            <input type="text" class="no-bordi" placeholder="Name your burger">
+            <!-- Ingredienti -->
+            <div>
+                <h3>Ingredienti</h3>
+                <div class="contenitore-due-colonne flex-c">
+                    <div class="colonna-1">
+                        <div class="flex-c">
+                            <img class="resize" src="img/cheese.svg" alt="">
+                            <div>cheese</div>
+                            <input type="checkbox">
+                            <div>add</div>
+                        </div>
+                        <div class="flex-c">
+                            <img class="resize" src="img/fried-egg.svg" alt="">
+                            <div>cheese</div>
+                            <input type="checkbox">
+                            <div>add</div>
+                        </div>
+                        <div class="flex-c">
+                            <img class="resize" src="img/mustard.svg" alt="">
+                            <div>cheese</div>
+                            <input type="checkbox">
+                            <div>add</div>
+                        </div>
+                    </div>
+                    <div class="colonna-2">
+                        <div class="flex-c">
+                            <img class="resize" src="img/tomato.svg" alt="">
+                            <div>cheese</div>
+                            <input type="checkbox">
+                            <div>add</div>
+                        </div>
+                        <div class="flex-c">
+                            <img class="resize" src="img/lettuce.svg" alt="">
+                            <div>cheese</div>
+                            <input type="checkbox">
+                            <div>add</div>
+                        </div>
+                        <div class="flex-c">
+                            <img class="resize" src="img/ketchup.svg" alt="">
+                            <div>cheese</div>
+                            <input type="checkbox">
+                            <div>add</div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <!-- Ingredienti fine -->
+            <!-- sconto -->
+            <div class="flex-c">
+                <div>Discount coupon</div>
+                <input type="text" class="no-bordi" placeholder="Insert Discount coupon">
+            </div>
+            <!-- fine sconto -->
+            <!-- bottone calcolo -->
+            <button>calcolo</button>
+        </main>
+        <footer>
+            <h3>Your price</h3>
+        </footer>
+    
+       
+    </div> 
     <script src="js/main.js"></script>
 </body>
 </html>
