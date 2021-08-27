@@ -14,7 +14,7 @@
             <img class="resize-2" src="img/burger-top.png" alt="">
         </header>
         <main>
-            <input type="text" class="no-bordi mio-burger" placeholder="Name your burger">
+            <input type="text" class="no-bordi mio-burger" id="prova" placeholder="Name your burger">
             <!-- Ingredienti -->
             <div>
                 <h3 class="ingredienti">Ingredienti</h3>
@@ -23,19 +23,19 @@
                         <div class="flex-c">
                             <img class="resize" src="img/cheese.svg" alt="">
                             <div>cheese</div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="formaggio">
                             <div>add</div>
                         </div>
                         <div class="flex-c">
                             <img class="resize" src="img/fried-egg.svg" alt="">
                             <div>egg</div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="uovo">
                             <div>add</div>
                         </div>
                         <div class="flex-c">
                             <img class="resize" src="img/mustard.svg" alt="">
                             <div>mustard</div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="mostarda">
                             <div>add</div>
                         </div>
                     </div>
@@ -43,19 +43,19 @@
                         <div class="flex-c">
                             <img class="resize" src="img/tomato.svg" alt="">
                             <div>tomato</div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="pomodoro">
                             <div>add</div>
                         </div>
                         <div class="flex-c">
                             <img class="resize" src="img/lettuce.svg" alt="">
                             <div>lattuce</div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="lattuga">
                             <div>add</div>
                         </div>
                         <div class="flex-c">
                             <img class="resize" src="img/ketchup.svg" alt="">
                             <div>ketchup</div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="kezap">
                             <div>add</div>
                         </div>
                     </div>
@@ -71,11 +71,12 @@
             <!-- fine sconto -->
             <!-- bottone calcolo -->
             <div class="center">
-                <button><strong>Calculate</strong></button>
+                <button id="calcola"><strong>Calculate</strong></button>
               </div>
         </main>
         <footer>
             <h3>Your price</h3>
+            <div id=fine></div>
         </footer>
     
        
