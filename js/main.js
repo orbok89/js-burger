@@ -29,7 +29,7 @@ attivazione.addEventListener('click',
         }
         var sconto=document.getElementById("sconto").value;
         if (sconto == 'fede30' ){
-            totale = totale * 0.7;
+            totale = (totale * 0.7).toFixed(2);
         }
         document.getElementById("fine").innerHTML = totale + '$';
         
