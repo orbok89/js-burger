@@ -1,7 +1,8 @@
-var totale = 0;
+var totale = 10;
 var attivazione = document.getElementById('calcola');
 attivazione.addEventListener('click',
     function(){
+        document.getElementById("calcola").disabled = true
         var stampo = document.getElementById('formaggio').checked;
         if (stampo == true) {
             totale = totale + 5;
@@ -26,7 +27,13 @@ attivazione.addEventListener('click',
         if (stampo == true) {
             totale = totale + 5;
         }
+        var sconto=document.getElementById("sconto").value;
+        if (sconto == 'fede30' ){
+            totale = totale * 0.7;
+        }
         document.getElementById("fine").innerHTML = totale + '$';
+        
+
     
     }
 )
